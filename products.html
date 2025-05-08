@@ -4,39 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products - ShopSmart</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">ShopSmart</div>
+            <a href="index.html" class="logo">ShopSmart</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </nav>
     </header>
 
     <main>
+        <section class="page-header">
+            <h1>Our Products</h1>
+            <p>Discover our wide range of quality products</p>
+        </section>
+
         <section class="products">
-            <h2>Our Products</h2>
-            <div class="product-grid" id="product-container">
+            <div class="products-container" id="product-container">
                 <!-- Product items will be dynamically loaded here via JavaScript -->
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 nfvic smart Shop. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>ShopSmart is your trusted online shopping destination for quality products and excellent service.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NFVIC ShopSmart. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
